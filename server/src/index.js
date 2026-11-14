@@ -61,6 +61,6 @@ try {
   console.error('[SplitSync DB Init Error]:', initErr);
 }
 
-app.listen(PORT, () => {
-  console.log(`🚀 SplitSync Server running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 SplitSync Server running on http://0.0.0.0:${PORT}`);
 });

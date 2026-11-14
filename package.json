@@ -9,7 +9,7 @@
     "dev:server": "node server/src/index.js",
     "dev:client": "npm --prefix client run dev",
     "dev": "concurrently -k -n \"server,client\" -c \"blue,green\" \"npm run dev:server\" \"npm run dev:client\"",
-    "build": "npm --prefix server install && npm --prefix client install && npm --prefix client run build",
+    "build": "node build.js",
     "start": "node server/src/index.js"
   },
   "dependencies": {
