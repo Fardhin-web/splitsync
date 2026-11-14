@@ -22,3 +22,4 @@ try {
   console.error('\n❌ Build failed with error:', error.message);
   process.exit(1);
 }
+
